@@ -1,0 +1,11 @@
+---
+  ec2:
+    image_id: ami-2d4aa444
+    availability_zone: us-east-1c
+    key_name: ec2-keypair
+    security_group: default
+    max_count: 1
+  
+  zerigo:
+    domain: jrs-labs.com
+    
