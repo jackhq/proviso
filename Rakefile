@@ -5,10 +5,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "proviso"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Proviso is a cli for provisioning servers}
+    gem.description = %Q{Proviso is a cli plugin system that focuses on provisioning servers, but you can create plugins for anything.}
     gem.email = "tom@jackhq.com"
-    gem.homepage = "http://github.com/twilson63/proviso"
+    gem.homepage = "http://github.com/jackhq/proviso"
     gem.authors = ["Tom Wilson"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
