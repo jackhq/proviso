@@ -18,5 +18,9 @@ describe "Proviso Command" do
     Proviso::Command.run('ec2:status',['i-3d8b0157'])
   end
   
+  it "should link server " do
+    Proviso::Command.run('zerigo:link',['staging.example.com','127.0.0.1'])
+    
+  end
   
 end
