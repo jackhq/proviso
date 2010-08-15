@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Tom Wilson"]
   s.date = %q{2010-08-15}
   s.default_executable = %q{proviso}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Proviso is a cli plugin system that focuses on provisioning servers, but you can create plugins for anything.}
   s.email = %q{tom@jackhq.com}
   s.executables = ["proviso"]
   s.extra_rdoc_files = [
@@ -27,10 +27,12 @@ Gem::Specification.new do |s|
      "lib/proviso.rb",
      "lib/proviso/command.rb",
      "lib/proviso/commands/base.rb",
+     "lib/proviso/commands/hello.rb",
      "lib/proviso/commands/plugins.rb",
      "lib/proviso/helpers.rb",
      "lib/proviso/plugin.rb",
      "lib/proviso/plugin_interface.rb",
+     "proviso.gemspec",
      "readme.md",
      "spec/fixtures/proviso.yml",
      "spec/proviso/command_spec.rb",
@@ -38,13 +40,14 @@ Gem::Specification.new do |s|
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/twilson63/proviso}
+  s.homepage = %q{http://github.com/jackhq/proviso}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Proviso is a cli for provisioning servers}
   s.test_files = [
     "spec/proviso/command_spec.rb",
+     "spec/proviso/commands/base_spec.rb",
      "spec/proviso_spec.rb",
      "spec/spec_helper.rb"
   ]

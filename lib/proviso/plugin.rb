@@ -1,4 +1,5 @@
 # based on the Heroku and Rails Plugin
+require 'fileutils'
 
 module Proviso
   class Plugin

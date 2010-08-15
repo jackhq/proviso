@@ -8,7 +8,7 @@ module Proviso::Command
     alias :index :list
 
     def install
-      plugin = Proviso::Plugin.new(args.shift)
+      plugin = Proviso::Plugin.new(@args.shift)
       if plugin.install
         display "#{plugin} installed"
       else
@@ -17,7 +17,7 @@ module Proviso::Command
     end
 
     def uninstall
-      plugin = Proviso::Plugin.new(args.shift)
+      plugin = Proviso::Plugin.new(@args.shift)
       plugin.uninstall
       display "#{plugin} uninstalled"
     end
