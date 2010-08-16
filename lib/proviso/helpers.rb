@@ -2,6 +2,9 @@
 
 module Proviso
   module Helpers
+    PROVISO_PATH = '.proviso'
+    CONFIG_FILE = 'proviso.yml'
+    
     def home_directory
       running_on_windows? ? ENV['USERPROFILE'] : ENV['HOME']
     end

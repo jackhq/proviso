@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "lib/proviso.rb",
      "lib/proviso/command.rb",
      "lib/proviso/commands/base.rb",
+     "lib/proviso/commands/config.rb",
      "lib/proviso/commands/hello.rb",
      "lib/proviso/commands/plugins.rb",
      "lib/proviso/helpers.rb",
