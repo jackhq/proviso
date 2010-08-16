@@ -16,6 +16,11 @@ module Proviso
     def running_on_a_mac?
       RUBY_PLATFORM =~ /-darwin\d/
     end
+    
+    def yaml_file
+      File.join(home_directory, PROVISO_PATH, CONFIG_FILE)
+    end
+    
   end
 end
 

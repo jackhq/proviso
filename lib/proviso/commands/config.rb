@@ -38,11 +38,7 @@ module Proviso::Command
     end
     
   private
-    
-    def yaml_file
-      File.join(home_directory, PROVISO_PATH, CONFIG_FILE)
-    end
-    
+        
     def modify_config_file
       config_hash = YAML.load_file(yaml_file)
       config_hash.merge!({@args[0] => { @args[1] => @args[2] }})
