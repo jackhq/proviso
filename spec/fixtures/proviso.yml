@@ -8,7 +8,7 @@
   
   zerigo:
     user: user
-    password: password
+    token: password
     type: A
     ttl: 15000
     
