@@ -41,7 +41,7 @@ module Proviso::Command
         
     def modify_config_file
       config_hash = YAML.load_file(yaml_file)
-      config_hash[@args[0]].merge!({ @args[1] => @args[2] }})
+      config_hash[@args[0]].merge!({ @args[1] => @args[2] })
       open(yaml_file, 'w') { |f| f.write config_hash.to_yaml }      
     end
     
