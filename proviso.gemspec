@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Wilson"]
-  s.date = %q{2010-08-16}
+  s.date = %q{2010-08-17}
   s.default_executable = %q{proviso}
   s.description = %q{Proviso is a cli plugin system that focuses on provisioning servers, but you can create plugins for anything.}
   s.email = %q{tom@jackhq.com}

@@ -11,6 +11,7 @@ module Proviso::Command
         error "config does not exists run config:create"
       end
     end
+        
     
     def add
       if @args.length == 3
@@ -32,7 +33,12 @@ module Proviso::Command
     
     def create
       data = { "config" => { "hello" => 'world'}}
-      FileUtils.mkdir_p(File.join(home_directory, PROVISO_PATH))
+      if @args.length == 1
+        data = YAML.load_file(yaml_file) if File.exists?(yaml_file)
+        data.merge!(@args.first => {})
+      else
+        FileUtils.mkdir_p(File.join(home_directory, PROVISO_PATH))
+      end
       open(yaml_file, 'w') { |f| f.write data.to_yaml }  
       display "created config file"
     end
